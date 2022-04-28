@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ContractsComponent } from './contracts/contracts.component';
 import { TopbarComponent } from './topbar/topbar.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { DocumentsComponent } from './documents/documents.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContractsComponent,
-    TopbarComponent
+    TopbarComponent,
+    DocumentsComponent
   ],
   imports: [
     BrowserModule,

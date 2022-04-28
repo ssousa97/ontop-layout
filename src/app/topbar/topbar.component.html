@@ -2,10 +2,10 @@
     <div class="logo">
         <img src="assets/logo.png" alt="" class="logo">
     </div>
-    <ul class="nav-list">
+    <ul class="nav-list toggle-off" id="nav-list">
         <li>
             <div class="item">
-                <a href="" [routerLink]="['/']" routerLinkActive="active">
+                <a href="" [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">
                     <fa-icon [icon]="faUser" class="item-icon"></fa-icon>
                     Contracts
                     <fa-icon [icon]="faAngleDown" class="item-icon"></fa-icon>
@@ -14,23 +14,38 @@
         </li>
         <li>
             <div class="item">
-                <fa-icon [icon]="faDocuments" class="item-icon"></fa-icon>
-                <a href="" [routerLink]="['/documents']" routerLinkActive="active" >Documents</a>
-                <fa-icon [icon]="faAngleDown" class="item-icon"></fa-icon>
+                <a href="" [routerLink]="['/documents']" routerLinkActive="active">
+                    <fa-icon [icon]="faDocuments" class="item-icon"></fa-icon>
+                    Documents
+                    <fa-icon [icon]="faAngleDown" class="item-icon"></fa-icon>
+                </a>
             </div>
         </li>
         <li>
             <div class="item">
-                <fa-icon [icon]="faPayout" class="item-icon"></fa-icon>
-                <a href="" [routerLink]="['/payout']" routerLinkActive="active">Payout</a>
-                <fa-icon [icon]="faAngleDown" class="item-icon"></fa-icon>
+                <a href="" [routerLink]="['/payout']" routerLinkActive="active">
+                    <fa-icon [icon]="faPayout" class="item-icon"></fa-icon>
+                    Payout
+                    <fa-icon [icon]="faAngleDown" class="item-icon"></fa-icon>
+                </a>
             </div>
         </li>
         <li>
             <div class="item">
-                <fa-icon [icon]="faTime" class="item-icon"></fa-icon>
-                <a href="" [routerLink]="['/time']" routerLinkActive="active" >Time</a>
-                <fa-icon [icon]="faAngleDown" class="item-icon"></fa-icon>
+                <a href="" [routerLink]="['/time']" routerLinkActive="active">
+                    <fa-icon [icon]="faTime" class="item-icon"></fa-icon>
+                    Time
+                    <fa-icon [icon]="faAngleDown" class="item-icon"></fa-icon>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="item item-user">
+                <a href="" [routerLink]="['/user']" routerLinkActive="active">
+                    <fa-icon [icon]="faUser" class="item-icon"></fa-icon>
+                    User
+                    <fa-icon [icon]="faAngleDown" class="item-icon"></fa-icon>
+                </a>
             </div>
         </li>
     </ul>
@@ -38,7 +53,9 @@
         <div class="division-line"></div>
         <img src="assets/user-photo.png" alt="">
         <fa-icon [icon]="faAngleDown" class="angle-down-photo"></fa-icon>
-
+    </div>
+    <div class="burger-menu" id="burger-menu">
+        <fa-icon [icon]="faBars" size="2x"></fa-icon>
     </div>
 </nav>
 
