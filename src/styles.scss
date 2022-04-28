@@ -1,13 +1,14 @@
-@import 'node_modules/bootstrap/scss/bootstrap';
+@use './shared/styles/variables';
 
 @font-face {
     font-family: 'Aileron';
     src: url('./assets/fonts/aileron/Aileron-Regular.otf');
 }
 
-html, body {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Aileron', sans-serif;
 }
+

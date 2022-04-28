@@ -1,13 +1,44 @@
-<nav>
-    <div class="nav-bar">
-        <span class="logo"><a href="#">Ontop</a></span>
+<nav class="navbar">
+    <div class="logo">
+        <img src="assets/logo.png" alt="" class="logo">
     </div>
-    <div class="menu">
-        <ul class="nav-links">
-            <li><a [routerLink]="['/']" routerLinkActive="router-link-active"></a>Contracts</li>
-            <li><a></a></li>
-            <li><a></a></li>
-            <li><a></a></li>
-        </ul>
+    <ul class="nav-list">
+        <li>
+            <div class="item">
+                <a href="" [routerLink]="['/']" routerLinkActive="active">
+                    <fa-icon [icon]="faUser" class="item-icon"></fa-icon>
+                    Contracts
+                    <fa-icon [icon]="faAngleDown" class="item-icon"></fa-icon>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <fa-icon [icon]="faDocuments" class="item-icon"></fa-icon>
+                <a href="" [routerLink]="['/documents']" routerLinkActive="active" >Documents</a>
+                <fa-icon [icon]="faAngleDown" class="item-icon"></fa-icon>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <fa-icon [icon]="faPayout" class="item-icon"></fa-icon>
+                <a href="" [routerLink]="['/payout']" routerLinkActive="active">Payout</a>
+                <fa-icon [icon]="faAngleDown" class="item-icon"></fa-icon>
+            </div>
+        </li>
+        <li>
+            <div class="item">
+                <fa-icon [icon]="faTime" class="item-icon"></fa-icon>
+                <a href="" [routerLink]="['/time']" routerLinkActive="active" >Time</a>
+                <fa-icon [icon]="faAngleDown" class="item-icon"></fa-icon>
+            </div>
+        </li>
+    </ul>
+    <div class="user-photo">
+        <div class="division-line"></div>
+        <img src="assets/user-photo.png" alt="">
+        <fa-icon [icon]="faAngleDown" class="angle-down-photo"></fa-icon>
+
     </div>
 </nav>
+
