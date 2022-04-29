@@ -12,8 +12,9 @@
         max-height: 108px;
     }
 
-    ::ng-deep main{
+    main{
         grid-area: main-content;
+        margin-top: 50px;
         background: var(--primary-color);
     }
 }

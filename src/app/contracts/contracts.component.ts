@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContractsComponent implements OnInit {
 
+  client = 'Client';
+  
   constructor() { }
 
   ngOnInit(): void {

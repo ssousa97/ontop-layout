@@ -6,9 +6,7 @@ import { faAngleDown, faBars, faCalendar, faCreditCard, faFileLines, faUser } fr
   templateUrl: './topbar.component.html',
   styleUrls: ['./topbar.component.scss']
 })
-export class TopbarComponent implements OnInit {
-
-  navListIsToggled = false;
+export class TopbarComponent {
 
   /* icons */
   faUser = faUser;
@@ -18,10 +16,7 @@ export class TopbarComponent implements OnInit {
   faAngleDown = faAngleDown;
   faBars = faBars;
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+  navListIsToggled = false;
 
   ngAfterViewInit(){
     let burgerMenu = document.getElementById('burger-menu') as HTMLElement;
