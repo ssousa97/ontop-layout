@@ -1,20 +1,18 @@
 .container{
     display: grid;
-    grid-template-rows: 1.2fr 8.8fr;
+    grid-template-rows: 1fr 9fr;
     grid-template-areas: 
         "topbar"
         "main-content";
 
     height: 100vh;
 
-    ::ng-deep nav{
+    .topbar{
         grid-area: topbar;
-        max-height: 108px;
     }
 
-    main{
+    .main{
         grid-area: main-content;
-        margin-top: 50px;
-        background: var(--primary-color);
+
     }
 }
