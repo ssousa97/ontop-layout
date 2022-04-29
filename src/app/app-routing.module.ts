@@ -5,7 +5,7 @@ import { ContractsComponent } from './contracts/contracts.component';
 const routes: Routes = [
 
   {
-    path: '',
+    path: 'contracts',
     component: ContractsComponent
   },
 ];

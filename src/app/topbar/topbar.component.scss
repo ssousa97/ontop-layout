@@ -1,163 +1,74 @@
-.navbar{
-
-    display: grid;
-    grid-template-columns: 2fr 6fr 2fr;
-    grid-template-areas: "logo links user";
-    align-items: center;
-
-    height: 100%;
+ul {
+    list-style: none;
     
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+
     background: var(--secondary-color);
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
 
-    .logo{
-
-        grid-area: logo;
-        display: flex;
-        justify-content: center;
-
+    .logo {
+        margin-right: auto;
+        margin-left: 3rem;
     }
-
-    .nav-list{
-        grid-area: links;
-
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none;
-
-        .item {
-            display: flex;
-            padding-top: 40px;
-            padding-bottom: 40px;
-            justify-content: center;
-            align-items: center;
-
-            a {
-                display: block;
-                text-decoration: none;
-                color: var(--text-color);
-                font-weight: bold;
-            }
-
-            .active {
-                color: var(--terciary-color);
-                & > * {
-                    color: var(--terciary-color);
-                }
-            }
-
-            .item-icon {
-                color: var(--text-color);
-                margin-right: 5px;
-                margin-left: 5px;
-                cursor: pointer;
-            }
-        }
-
-    }
-
     .user-photo {
+        
+        margin-left: auto;
+        margin-right: 3rem;
 
         display: flex;
-        grid-area: user;
-        justify-content: center;
         align-items: center;
-        margin-right: 20px;
+        gap: 1rem;
 
-        img {
-            margin-left: 80px;
-            cursor: pointer;
-        }
-
-        .division-line{
-            height: 78px;
-            border: solid 1px #c4c4c4;
-        }
-
-        .angle-down-photo {
-            margin-left: 10px;
-            color: var(--text-color);
-
-        }
     }
+    .nav-item {
+        cursor: pointer;
+        display: flex;
+        padding: 0 4.5rem 0 4.5rem;
+        a {
+            text-decoration: none;
+            color: #898989;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
 
-    .item-user {
-        display: none !important;
+        @media (max-width: 1374px){
+            padding: 0 2.5rem 0 2.5rem;
+        }
+        @media (max-width: 1306px){
+            padding: 0 2rem 0 2rem;
+        }
+        @media (max-width: 1058px){
+            padding: 0 1rem 0 1rem;
+        }
     }
 
     .burger-menu {
         display: none;
-        color: var(--terciary-color);
-        cursor: pointer;
-        margin-right: 30px;
     }
 
-    @media (max-width: 962px){
 
-        display: flex;
-        justify-content: space-between;
-        height: 61px;
-
-        .logo {
-            scale: 0.75;
-        }
+    @media (max-width: 986px){
         
-        .nav-list{
-            display: flex;
-            flex-direction: column;
+        height: 10vh;
 
-            position: absolute;
-            top: 80px;
-            right: 0;
-
-            z-index: 1;
-
-            background: var(--secondary-color);
-
-            .item{
-                display: block !important;
-                padding-top: 20px;
-                padding-bottom: 20px;
-
-                width: 250px;
-
-                text-align: center;
-
-                border: solid 1px var(--primary-color);
-                a {
-                    display: block;
-                    background: var(--secondary-color);
-                }
-
-                .item-icon{ 
-                    display: none !important;
-                }
+        .nav-item, .user-photo{
+            display: none;            
+        }
+        .logo{
+            img {
+                scale: 0.75;
             }
-
+            margin-left: -2rem;
+            margin-right: auto;
+        }
+        .burger-menu {
+            display: block;
+            color: #898989;
+            margin-right: 1rem;
         }
 
-        .toggle-on {
-            opacity: 1;
-            transition-duration: 0.2s;
-        }
-
-        .toggle-off {
-            opacity: 0;
-        }
-
-        .user-photo{
-            display: none !important;
-        }
-        .burger-menu{
-            display: block !important;
-        }
     }
-
 
 }
-
-
-
-
-
-

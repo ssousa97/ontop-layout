@@ -1,3 +1,4 @@
+
 @use './shared/styles/variables';
 
 @font-face {
@@ -5,14 +6,13 @@
     src: url('./assets/fonts/aileron/Aileron-Regular.otf');
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Aileron', sans-serif;
 }
 
-body{
-    background: var(--primary-color);
+body { 
+  background: var(--primary-color);
 }
-

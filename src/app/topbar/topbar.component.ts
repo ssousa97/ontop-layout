@@ -8,31 +8,34 @@ import { faAngleDown, faBars, faCalendar, faCreditCard, faFileLines, faUser } fr
 })
 export class TopbarComponent {
 
-  /* icons */
-  faUser = faUser;
-  faDocuments = faFileLines;
-  faPayout = faCreditCard;
-  faTime = faCalendar;
+  /* font-awesome icon */
   faAngleDown = faAngleDown;
   faBars = faBars;
 
-  navListIsToggled = false;
+  navItems = [
+    {
+      icon: faUser,
+      text: 'Contracts',
+      path: '/'
+    },
+    {
+      icon: faFileLines,
+      text: 'Documents',
+      path: '/documents'
+    },
+    {
+      icon: faCreditCard,
+      text: 'Payout',
+      path: '/payout'
+    },
+    {
+      icon: faCalendar,
+      text: 'Time',
+      path: '/time'
+    }
+  ];
 
-  ngAfterViewInit(){
-    let burgerMenu = document.getElementById('burger-menu') as HTMLElement;
-    burgerMenu.addEventListener('click', ()=> {
-      let navList = document.getElementById('nav-list') as HTMLElement;
 
-      if(this.navListIsToggled) {
-        navList.classList.remove('toggle-on');
-        navList.classList.add('toggle-off');
-      } else {
-        navList.classList.add('toggle-on');
-        navList.classList.remove('toggle-off');
-      }
-      this.navListIsToggled = !this.navListIsToggled;
-
-    });
-  }
+  
 
 }
