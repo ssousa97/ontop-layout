@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, Renderer2, ViewChild } from '@angular/core';
 import { faAngleDown, faBars, faCalendar, faCreditCard, faFileLines, faUser } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -8,15 +8,19 @@ import { faAngleDown, faBars, faCalendar, faCreditCard, faFileLines, faUser } fr
 })
 export class TopbarComponent {
 
+  @ViewChild('navList') navList!: ElementRef;
+
   /* font-awesome icon */
   faAngleDown = faAngleDown;
   faBars = faBars;
+
+  toggleBurgerMenu = false;
 
   navItems = [
     {
       icon: faUser,
       text: 'Contracts',
-      path: '/'
+      path: '/contracts'
     },
     {
       icon: faFileLines,
@@ -35,7 +39,16 @@ export class TopbarComponent {
     }
   ];
 
+  constructor(private _renderer: Renderer2) {  }
 
-  
+  openBurgerMenu(){
+
+    this.toggleBurgerMenu ? 
+      this._renderer.removeClass(this.navList.nativeElement, 'toggle') :
+      this._renderer.addClass(this.navList.nativeElement, 'toggle')
+
+    this.toggleBurgerMenu = !this.toggleBurgerMenu;
+    
+  }
 
 }

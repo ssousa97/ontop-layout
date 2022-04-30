@@ -1,22 +1,21 @@
-<div class="container">
-    <ul>
-        <li class="logo">
-            <img src="assets/logo.png" alt="">
-        </li>
-
+<nav class="nav-bar">
+    <div class="logo">
+        <img src="assets/logo.png" alt="">
+    </div>
+    <ul class="nav-list" #navList>
         <li *ngFor="let item of navItems" class="nav-item">
             <a [routerLink]="[item.path]" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">
-                <fa-icon [icon]="item.icon"></fa-icon>
+                <fa-icon [icon]="item.icon" class="li-icon"></fa-icon>
                     {{item.text}}
-                <fa-icon [icon]="faAngleDown"></fa-icon>
+                <fa-icon [icon]="faAngleDown" class="li-icon"></fa-icon>
             </a>
         </li>
-        <li class="user-photo">
-            <img src="assets/user-photo.png" alt="">
-            <fa-icon [icon]="faAngleDown"></fa-icon>
-        </li>
-        <li class="burger-menu">
-            <fa-icon [icon]="faBars" size="2x"></fa-icon>
-        </li>
     </ul>
-</div>
+    <div class="user-photo">
+        <img src="assets/user-photo.png" alt="">
+        <fa-icon [icon]="faAngleDown"></fa-icon>
+    </div>
+    <div class="burger-menu" (click)="openBurgerMenu()">
+        <fa-icon [icon]="faBars" size="2x"></fa-icon>
+    </div>
+</nav>
