@@ -1,6 +1,5 @@
 .container{
     display: grid;
-    grid-template-rows: 1fr 9fr;
     min-height: 100vh;
     grid-template-areas: 
         "navbar"
@@ -10,6 +9,7 @@
 
 .navbar {
     grid-area: navbar;
+    max-height: 13vh;
 }
 
 

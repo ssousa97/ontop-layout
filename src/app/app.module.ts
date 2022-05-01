@@ -1,24 +1,22 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { ContractsComponent } from './contracts/contracts.component';
-import { TopbarComponent } from './topbar/topbar.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { AppComponent } from './app.component';
+import { ContractsModule } from './components/contracts/contracts.module';
+import { TopbarModule } from './components/topbar/topbar.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContractsComponent,
-    TopbarComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule,
     BrowserAnimationsModule,
+    ContractsModule,
+    TopbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

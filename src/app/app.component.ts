@@ -9,18 +9,4 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 export class AppComponent {
 
 
-  constructor(private _responsive: BreakpointObserver) {}
-
-  ngOnInit(){
-
-    this._responsive.observe(Breakpoints.Small).subscribe(result => {
-      if(result.matches){
-        console.log(result.breakpoints);
-        
-      }
-    })
-    
-
-  }
-
 }

@@ -1,0 +1,101 @@
+{
+    "client" : "Client",
+    "contractors" : [    
+        {
+            "contractorName" : "Person 1",
+            "type" : "traditional",
+            "startDate" : "12/06/1997",
+            "amount" : "500",
+            "status" : "active"
+
+        },
+        {
+            "contractorName" : "Person 2",
+            "type" : "traditional",
+            "startDate" : "12/06/1998",
+            "amount" : "600",
+            "status" : "active"
+
+        },
+        {
+            "contractorName" : "Person 3",
+            "type" : "traditional",
+            "startDate" : "12/06/1999",
+            "amount" : "700",
+            "status" : "signaturePending"
+
+        },
+        {
+            "contractorName" : "Person 4",
+            "type" : "traditional",
+            "startDate" : "12/06/2000",
+            "amount" : "800",
+            "status" : "signaturePending"
+
+        },
+        {
+            "contractorName" : "Person 5",
+            "type" : "traditional",
+            "startDate" : "12/06/2001",
+            "amount" : "900",
+            "status" : "signaturePending"
+
+        },
+        {
+            "contractorName" : "Person 6",
+            "type" : "traditional",
+            "startDate" : "12/06/2002",
+            "amount" : "1000",
+            "status" : "signaturePending"
+
+        },
+        {
+            "contractorName" : "Person 7",
+            "type" : "traditional",
+            "startDate" : "12/06/2003",
+            "amount" : "1100",
+            "status" : "signaturePending"
+
+        },
+        {
+            "contractorName" : "Person 8",
+            "type" : "traditional",
+            "startDate" : "12/06/2003",
+            "amount" : "1100",
+            "status" : "signaturePending"
+
+        },
+        {
+            "contractorName" : "Person 9",
+            "type" : "traditional",
+            "startDate" : "12/06/2003",
+            "amount" : "1100",
+            "status" : "signaturePending"
+
+        },
+        {
+            "contractorName" : "Person 10",
+            "type" : "traditional",
+            "startDate" : "12/06/2003",
+            "amount" : "1100",
+            "status" : "signaturePending"
+
+        },
+        {
+            "contractorName" : "Person 11",
+            "type" : "traditional",
+            "startDate" : "12/06/2003",
+            "amount" : "1100",
+            "status" : "signaturePending"
+
+        },
+        {
+            "contractorName" : "Person 12",
+            "type" : "traditional",
+            "startDate" : "12/06/2003",
+            "amount" : "1100",
+            "status" : "signaturePending"
+
+        }
+    ]
+}
