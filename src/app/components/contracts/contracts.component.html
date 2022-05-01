@@ -16,12 +16,12 @@
             <input type="text" placeholder="pick a date" class="calendar">
             <select class="contract-type">
                 <option value="" disabled selected>Contract type</option>
-                <option *ngFor="let type of contractsType" [value]="type[0]">{{type[1]}}</option>
+                <option *ngFor="let type of contractsType" [value]="type.key">{{ type.val }}</option>
             </select>
             <input type="text" placeholder="contractor name" class="contractor-name">
             <select class="contract-status">
                 <option value="" disabled selected>Status</option>
-                <option *ngFor="let type of contractsStatus" [value]="type[0]">{{type[1]}}</option>
+                <option *ngFor="let type of contractsStatus" [value]="type.key">{{ type.val }}</option>
             </select>
         </div>
     </div>
@@ -29,8 +29,18 @@
         <table mat-table appTableResponsive [dataSource]="dataSource" class="mat-elevation-z8">
 
             <ng-container *ngFor="let col of displayedColumns" [matColumnDef]="col.field">
-                <th mat-header-cell *matHeaderCellDef> {{ col.label }} </th>
-                <td mat-cell *matCellDef="let element"> {{ element[col.field] }} </td>
+                    <th mat-header-cell *matHeaderCellDef> {{ col.label }} </th>
+                    <td mat-cell *matCellDef="let element">
+                        <ng-container *ngIf="col.field === 'actions'; else elseBlock">
+                            {{ 'hello' }}
+                        </ng-container>
+                        <ng-template #elseBlock>
+                            <div [ngClass] ="applyCss(element, col.field)">
+                                {{ formatInput(col.field, element[col.field]) }}
+                            </div>    
+                        </ng-template>
+                      
+                    </td>  
             </ng-container>
 
             <tr mat-header-row *matHeaderRowDef="columnsProps; sticky : true"></tr>

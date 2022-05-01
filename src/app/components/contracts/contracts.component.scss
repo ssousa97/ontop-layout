@@ -111,7 +111,48 @@ main {
   }
 }
 
+/*runtime class*/
+.status-field-active {
+
+  background: rgba(54, 207, 130, 0.18);
+  border-radius: 20px;
+
+  color: #36CF82;
+  font-weight: 700;
+  font-size: 0.75rem;
+
+  width: 60%;
+  
+  padding: 0.3rem 0 0.3rem 1rem;
+
+}
+.status-field-pending {
+
+  background: rgba(242, 157, 66, 0.3);
+  border-radius: 20px;
+
+  color: #F29D42;
+  font-weight: 700;
+  font-size: 0.75rem;
+
+  width: 60%;
+
+  padding: 0.3rem 0 0.3rem 1rem;
+
+}
+
 @media (max-width: 768px) {
+
+  .status-field-active, .status-field-pending {
+    display: flex;
+    justify-content: flex-start;
+    white-space: nowrap;
+  }
+
+  .status-field-pending {
+    width: fit-content;
+  }
+
 
   .filter {
     margin-bottom: 1rem;
@@ -156,3 +197,4 @@ main {
     font-size: 0.8rem;
   }
 }
+

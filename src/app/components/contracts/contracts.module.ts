@@ -6,6 +6,7 @@ import { ContractsComponent } from './contracts.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { appTableResponsiveModule } from 'src/app/directives/table-responsive/table-responsive.module';
 import { HttpClientModule } from '@angular/common/http';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [ContractsComponent],
@@ -15,7 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     appTableResponsiveModule,
     FontAwesomeModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatIconModule
   ],
   exports: [ContractsComponent],
 })
