@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { ChangeDetectorRef, Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { faPlus, faSliders } from '@fortawesome/free-solid-svg-icons';
+import { faEllipsisVertical, faPlus, faSliders } from '@fortawesome/free-solid-svg-icons';
 import * as moment from 'moment';
 import { lastValueFrom, startWith } from 'rxjs';
 import { ContractorInterface, ContractsResponseInterface, ContractsStatusEnum, ContractsTypeEnum } from './contracts.interface';
@@ -19,6 +19,7 @@ export class ContractsComponent {
   /*icons*/
   faSliders = faSliders;
   faPlus = faPlus;
+  faVert = faEllipsisVertical;
 
   client!: string;
   contracts!: ContractorInterface[];

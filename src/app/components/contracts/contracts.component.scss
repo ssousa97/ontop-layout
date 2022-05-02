@@ -141,6 +141,18 @@ main {
 
 }
 
+.actions-icon-btn {
+  padding-left: 1.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.actions-dropdown {
+  position: absolute;
+  top: 1rem;
+
+}
+
 @media (max-width: 768px) {
 
   .status-field-active, .status-field-pending {

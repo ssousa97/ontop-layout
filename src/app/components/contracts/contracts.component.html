@@ -32,7 +32,11 @@
                     <th mat-header-cell *matHeaderCellDef> {{ col.label }} </th>
                     <td mat-cell *matCellDef="let element">
                         <ng-container *ngIf="col.field === 'actions'; else elseBlock">
-                            {{ 'hello' }}
+                            <div class="actions-icon-btn">
+                                <fa-icon [icon]="faVert"></fa-icon>
+                                
+                            </div>
+
                         </ng-container>
                         <ng-template #elseBlock>
                             <div [ngClass] ="applyCss(element, col.field)">
