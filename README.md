@@ -17,7 +17,9 @@ Some of the requests are missing due to the time restriction and lack of knowled
 - Calendar input not implemented (breaking css)
 - In mobile view, cards do not have correct spacing.
 
+## IMPORTANT
 
+The layout could be acessed via route /contracts, e.g : http://localhost:4200/contracts.
 
 ## Desktop view
 
