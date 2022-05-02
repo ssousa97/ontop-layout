@@ -4,14 +4,6 @@ This project was the coding challenge by Ontop. The goal of this challenge was t
 
 Overall, i belive that the final result is good considering the time constraints. 
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
 ## Missing implementations
 
 Some of the requests are missing due to the time restriction and lack of knowledge of some aspects of CSS.
@@ -21,5 +13,29 @@ Some of the requests are missing due to the time restriction and lack of knowled
 - The actions button is not implemented.
 - "Filter" and "New Hire" buttons do not have icons, for some reason the adding them was breaking th css.
 - Contractor icon not implemented.
+- Support button not implement in mobile
+- Calendar input not implemented (breaking css)
+- In mobile view, cards do not have correct spacing.
+
+
+
+## Desktop view
+
+![Desktop view](./src/assets/desktop.png "Desktop view")
+
+## Mobile view
+![Mobile view](./src/assets/mobile.png "Mobile view")
+
+![Mobile view](./src/assets/mobile2.png "Mobile view")
+
+## Development server
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+
 
 
