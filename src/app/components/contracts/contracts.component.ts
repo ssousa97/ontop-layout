@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { ChangeDetectorRef, Component, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
+import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { faEllipsisVertical, faPlus, faSliders } from '@fortawesome/free-solid-svg-icons';
 import * as moment from 'moment';
@@ -15,6 +16,7 @@ import { ContractorInterface, ContractsResponseInterface, ContractsStatusEnum, C
 export class ContractsComponent {
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
+  @ViewChild(MatSort) sort!: MatSort;
 
   /*icons*/
   faSliders = faSliders;
@@ -61,6 +63,7 @@ export class ContractsComponent {
     
     this.dataSource.data = this.contracts;
     this.dataSource.paginator = this.paginator;
+    this.dataSource.sort = this.sort;
   }
 
   applyCss(element : ContractorInterface, field: string){

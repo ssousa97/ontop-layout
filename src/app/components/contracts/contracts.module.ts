@@ -7,6 +7,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { appTableResponsiveModule } from 'src/app/directives/table-responsive/table-responsive.module';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [ContractsComponent],
@@ -17,6 +18,7 @@ import { MatIconModule } from '@angular/material/icon';
     appTableResponsiveModule,
     FontAwesomeModule,
     MatPaginatorModule,
+    MatSortModule,
     MatIconModule
   ],
   exports: [ContractsComponent],
