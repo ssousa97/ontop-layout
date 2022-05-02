@@ -64,7 +64,6 @@ export class ContractsComponent {
     
     this.dataSource.data = this.contracts;
     this.dataSource.paginator = this.paginator;
-    this.dataSource.sort = this.sort;
 
   }
 

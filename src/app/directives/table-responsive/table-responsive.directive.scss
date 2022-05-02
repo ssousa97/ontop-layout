@@ -1,4 +1,8 @@
 @media (max-width: 768px) {
+    .mat-sort-header{
+      height: 0;
+      visibility: hidden;
+    }
     .mat-table[appTableResponsive] {
       .mat-header-row {
         display: flex;
