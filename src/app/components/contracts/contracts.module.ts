@@ -6,7 +6,6 @@ import { ContractsComponent } from './contracts.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { appTableResponsiveModule } from 'src/app/directives/table-responsive/table-responsive.module';
 import { HttpClientModule } from '@angular/common/http';
-import { MatIconModule } from '@angular/material/icon';
 import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { MatSortModule } from '@angular/material/sort';
     FontAwesomeModule,
     MatPaginatorModule,
     MatSortModule,
-    MatIconModule
   ],
   exports: [ContractsComponent],
 })

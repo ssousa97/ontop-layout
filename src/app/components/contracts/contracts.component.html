@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="row">
-            <input type="text" placeholder="pick a date" class="calendar">
+            <input type="text" class="calendar" placeholder="pick a date">
             <select class="contract-type">
                 <option value="" disabled selected>Contract type</option>
                 <option *ngFor="let type of contractsType" [value]="type.key">{{ type.val }}</option>

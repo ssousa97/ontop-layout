@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { ChangeDetectorRef, Component, ViewChild } from '@angular/core';
+import { ChangeDetectorRef, Component, ElementRef, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
@@ -7,6 +7,7 @@ import { faEllipsisVertical, faPlus, faSliders } from '@fortawesome/free-solid-s
 import * as moment from 'moment';
 import { lastValueFrom, startWith } from 'rxjs';
 import { ContractorInterface, ContractsResponseInterface, ContractsStatusEnum, ContractsTypeEnum } from './contracts.interface';
+
 
 @Component({
   selector: 'app-contracts',
@@ -64,6 +65,7 @@ export class ContractsComponent {
     this.dataSource.data = this.contracts;
     this.dataSource.paginator = this.paginator;
     this.dataSource.sort = this.sort;
+
   }
 
   applyCss(element : ContractorInterface, field: string){
