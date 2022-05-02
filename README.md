@@ -20,6 +20,6 @@ Some of the requests are missing due to the time restriction and lack of knowled
 - Table rows do not have the correct styling.
 - The actions button is not implemented.
 - "Filter" and "New Hire" buttons do not have icons, for some reason the adding them was breaking th css.
-
+- Contractor icon not implemented.
 
 
